@@ -1,0 +1,19 @@
+image: "alpine:latest"
+
+stages:
+  - test
+  - run
+
+before_script:
+  - echo "ran before_script"
+
+test-stage:
+  stage: test
+  script:
+    - uname -a
+
+run-stage:
+  stage: run
+  script:
+    - date -u
+    - which uname

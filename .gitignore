@@ -1,0 +1,5 @@
+
+# ignore IntelliJ IDEA's project settings
+
+.idea/**
+/secrets/**
